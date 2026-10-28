@@ -217,21 +217,13 @@ ran['sepal_width']
 
 
 
-
-```
-ran = ir[((ir.sepal_width <(Q1-1.5*IQR)) | (ir.sepal_width > (Q3 + 1.5 * IQR)))]
-ran['sepal_width']
-```
-
-<img width="637" height="346" alt="image" src="https://github.com/user-attachments/assets/e05df5d6-2a89-4ed0-b205-1c3f9f2d254e" />
-
-
-
 ```
 ran = ir[~((ir.sepal_width <(Q1-1.5*IQR)) | (ir.sepal_width > (Q3 + 1.5 * IQR)))]
 ran['sepal_width']
 ```
 
+
+<img width="637" height="346" alt="image" src="https://github.com/user-attachments/assets/e05df5d6-2a89-4ed0-b205-1c3f9f2d254e" />
 
 
 
@@ -243,6 +235,7 @@ z= np.abs(stats.zscore(ir['petal_length']))
 z
 ```
 
+<img width="461" height="462" alt="image" src="https://github.com/user-attachments/assets/c4e0f8fe-4ca4-4b05-a32f-9034fb821f47" />
 
 
 
@@ -252,6 +245,7 @@ ir1
 ```
 
 
+<img width="487" height="323" alt="image" src="https://github.com/user-attachments/assets/c4502cee-46f1-4739-927a-0d21b528f0c9" />
 
 
 
